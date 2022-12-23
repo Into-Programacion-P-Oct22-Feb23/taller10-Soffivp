@@ -26,6 +26,7 @@ public class Problema02 {
         int suma = 0;
 
         for (int i = 0; i < ventas.length; i++) {
+            System.out.printf("Ingrese las ventas de: %s\n\n",vendedores[i]);
             for (int j = 0; j < ventas[i].length; j++) {
                 System.out.printf("Ingrese el numero de ventas del dia\n");
                 venta_dia = entrada.nextInt();
