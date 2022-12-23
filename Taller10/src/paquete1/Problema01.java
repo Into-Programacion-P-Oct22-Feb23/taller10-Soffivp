@@ -30,7 +30,6 @@ public class Problema01 {
 
             for (int j = 0; j < notas[i].length; j++) {
                 suma = suma + notas[i][j];
-                
             }
             promedio = suma/notas[1].length;
             promedios[i] = promedio; // 
