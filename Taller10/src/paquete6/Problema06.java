@@ -10,5 +10,26 @@ package paquete6;
  * @author reroes
  */
 public class Problema06 {
-    
+    public static void main(String[] args) {
+
+        String[][] estudiantes = {{"Sarah Ward", "Philip Payne"},
+        {"Carrie Burton", "Lauren Rice"},
+        {"Emma Escobar", "Lori Flores"},
+        {"Steven West", "Toni Martin"}
+        };
+
+        String cadena = "";
+        String nombre = "";
+        for (int i = 0; i < estudiantes.length; i++) {
+            for (int j = 0; j < 2; j++) {//usamos el limite para controlar el error de longitud
+                nombre = estudiantes[i][j];
+                if (nombre.length() == 11) {
+                    cadena = String.format(" %s", nombre);
+                    System.out.println(cadena);
+                }
+
+            }
+        }
+
+    }
 }
